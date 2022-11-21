@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class StepTwo extends AppCompatActivity {
-    Button btnBackStepTwo;
+    //Button btnBackStepTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,15 +16,8 @@ public class StepTwo extends AppCompatActivity {
         setContentView(R.layout.activity_step_two);
 
         Intent intent = getIntent();
-        btnBackStepTwo = findViewById(R.id.btnBackStepTwo);
+        //btnBackStepTwo = findViewById(R.id.btnBackStepTwo);
 
-        btnBackStepTwo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StepTwo.this,StepOne.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
     }
 }
