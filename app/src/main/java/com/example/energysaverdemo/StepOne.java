@@ -17,18 +17,7 @@ public class StepOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step_one);
 
-        btnBackStepOne = findViewById(R.id.btnBackStepOne);
-        imageViewStepOne =  findViewById(R.id.imageViewStepOne);
-        Intent intent = getIntent();
 
-        btnBackStepOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StepOne.this,MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         imageViewStepOne.setOnClickListener(new View.OnClickListener() {
             @Override

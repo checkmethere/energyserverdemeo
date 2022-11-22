@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         imageViewGirl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,StepOne.class);
+                Intent intent = new Intent(MainActivity.this,Dashboard.class);
                 startActivity(intent);
                 finish();
             }
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         imageViewBoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,StepOne.class);
+                Intent intent = new Intent(MainActivity.this,Dashboard.class);
                 startActivity(intent);
                 finish();
             }
