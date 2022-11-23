@@ -12,10 +12,10 @@
         android:layout_height="544dp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.638"
         app:srcCompat="@drawable/nicehouse" />
 
     <TextView
@@ -89,10 +89,10 @@
         android:id="@+id/imageView28"
         android:layout_width="32dp"
         android:layout_height="31dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="256dp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/presence_online" />
 
@@ -100,10 +100,11 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
+        android:layout_marginBottom="124dp"
         android:text="hint: Click the green dot to see what the super hero should do"
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

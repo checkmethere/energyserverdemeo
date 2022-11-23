@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/boyrunningn" />
 
     <VideoView
-        android:id="@+id/videoView"
+        android:id="@+id/videov"
         android:layout_width="348dp"
         android:layout_height="293dp"
         android:layout_marginBottom="288dp"
@@ -57,5 +57,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/forward" />
+
+    <Button
+        android:id="@+id/clk"
+        android:layout_width="236dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videov"
+        android:onClick="videoplay"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
