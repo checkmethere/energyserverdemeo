@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class StepOne extends AppCompatActivity {
     Button btnBackStepOne;
-    ImageView imageViewStepOne;
+    //ImageView imageViewStepOne;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +18,14 @@ public class StepOne extends AppCompatActivity {
         setContentView(R.layout.activity_step_one);
 
 
-        imageViewStepOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StepOne.this,StepTwo.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        imageViewStepOne.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(StepOne.this,StepTwo.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
     }
 }
