@@ -37,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="496dp"
-        android:text="Save Energy "
+        android:text="Turn off the lights"
+        android:textColor="#B86262"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,26 +86,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/forward" />
 
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="32dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="256dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/presence_online" />
-
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="72dp"
         android:text="hint: Click the green dot to see what the super hero should do"
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewOffButtonClick"
+        android:layout_width="49dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="376dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/offbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
