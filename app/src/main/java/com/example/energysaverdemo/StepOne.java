@@ -44,7 +44,9 @@ public class StepOne extends AppCompatActivity {
         imageViewOffButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(StepOne.this, Lightsoff.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
