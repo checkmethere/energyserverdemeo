@@ -18,7 +18,6 @@ public class StepOne extends AppCompatActivity {
         setContentView(R.layout.activity_step_one);
 
 
-
         imageViewStepOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
