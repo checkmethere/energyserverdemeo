@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 public class StepOne extends AppCompatActivity {
     Button btnBackStepOne;
+    ImageView imageViewAnimFwd;
     //ImageView imageViewStepOne;
 
     @Override
@@ -26,6 +27,16 @@ public class StepOne extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
+        imageViewAnimFwd = findViewById(R.id.imageViewAnimFwd);
+        imageViewAnimFwd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StepOne.this,VideoAnimation.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }
