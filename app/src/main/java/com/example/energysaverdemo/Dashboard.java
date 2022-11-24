@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 public class Dashboard extends AppCompatActivity {
     ImageView imageViewEnergy;
     ImageView imageViewSaveWater;
+    private MediaPlayer mediaPlayer;
 
 
     @SuppressLint("MissingInflatedId")
@@ -38,5 +40,29 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        // Media player
+
+        mediaPlayer = MediaPlayer.create(Dashboard.this,R.raw.backgroundmusic);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mediaPlayer.start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mediaPlayer.pause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mediaPlayer.start();
+//        mediaPlayer.stop();
+//        mediaPlayer.release();
     }
 }

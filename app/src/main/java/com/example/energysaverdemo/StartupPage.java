@@ -65,6 +65,7 @@ public class StartupPage extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mediaPlayer.start();
 //        mediaPlayer.stop();
 //        mediaPlayer.release();
     }
