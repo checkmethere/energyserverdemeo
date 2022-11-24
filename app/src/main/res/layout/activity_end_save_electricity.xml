@@ -24,9 +24,10 @@
 
     <ImageView
         android:id="@+id/imageView26"
-        android:layout_width="45dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gifImageView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/greenstar" />
 
@@ -84,23 +85,14 @@
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="59dp"
-        android:layout_height="42dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="15dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
         app:srcCompat="@drawable/forward" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="192dp"
-        android:layout_height="352dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/celebrate" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -112,6 +104,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/trophy" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="157dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/mickey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView6"

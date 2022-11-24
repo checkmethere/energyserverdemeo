@@ -8,11 +8,10 @@
     android:orientation="vertical"
     tools:context=".StartupPage">
 
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="255dp"
-        android:layout_height="211dp"
-        app:srcCompat="@drawable/saveearth" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switchofflightsgif"/>
 
     <EditText
         android:id="@+id/editTextTextPersonName"

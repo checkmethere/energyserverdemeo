@@ -10,23 +10,23 @@
         android:id="@+id/imageViewBoy5"
         android:layout_width="64dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="596dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/boyrunningn" />
 
-    <VideoView
-        android:id="@+id/videov"
-        android:layout_width="348dp"
-        android:layout_height="293dp"
-        android:layout_marginBottom="288dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="152dp"
+        android:src="@drawable/savepower"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimFwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewAnimPre"
@@ -51,22 +51,25 @@
     <ImageView
         android:id="@+id/imageViewAnimFwd"
         android:layout_width="59dp"
-        android:layout_height="42dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView2"
         app:srcCompat="@drawable/forward" />
 
-    <Button
-        android:id="@+id/clk"
-        android:layout_width="236dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
-        android:text="Play"
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="55dp"
+        android:text="Switch off lights"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimPre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videov"
-        android:onClick="videoplay"/>
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
