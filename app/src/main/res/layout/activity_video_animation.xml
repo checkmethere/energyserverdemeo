@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:layout_marginBottom="152dp"
-        android:src="@drawable/savepower"
+        android:src="@drawable/energysavingbeargif"
+
         app:layout_constraintBottom_toTopOf="@+id/imageViewAnimFwd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,17 +60,14 @@
         app:layout_constraintTop_toBottomOf="@+id/gifImageView2"
         app:srcCompat="@drawable/forward" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="55dp"
-        android:text="Switch off lights"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimPre"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="177dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/dancetwo"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAnimHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView2" />
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
