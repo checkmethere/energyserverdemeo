@@ -9,10 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class Dashboard extends AppCompatActivity {
     ImageView imageViewEnergy;
     ImageView imageViewSaveWater;
     private MediaPlayer mediaPlayer;
+    GifImageView gifImageViewLight;
+    GifImageView gifImageViewSaveWater;
 
 
     @SuppressLint("MissingInflatedId")
@@ -23,19 +27,41 @@ public class Dashboard extends AppCompatActivity {
 
         imageViewEnergy = findViewById(R.id.imageViewEnergy);
         imageViewSaveWater = findViewById(R.id.imageViewSaveWater);
+        gifImageViewLight = findViewById(R.id.gifImageViewLight);
+        gifImageViewSaveWater = findViewById(R.id.gifImageViewSaveWater);
+
         Intent intent = getIntent();
 
 
         imageViewEnergy.setOnClickListener(view -> {
             Intent intent1 = new Intent(Dashboard.this,StepOne.class);
             startActivity(intent1);
-            finish();            });
+            finish();
+        });
 
         imageViewSaveWater.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this,StepOne.class);
                 startActivity(intent);
+                finish();
+            }
+        });
+
+        gifImageViewLight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Dashboard.this,StepOne.class);
+                startActivity(intent1);
+                finish();
+            }
+        });
+
+        gifImageViewSaveWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Dashboard.this,StepOne.class);
+                startActivity(intent1);
                 finish();
             }
         });
