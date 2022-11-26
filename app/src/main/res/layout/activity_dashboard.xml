@@ -24,11 +24,21 @@
         android:id="@+id/gifImageViewLight"
         android:layout_width="173dp"
         android:layout_height="159dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="344dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/savepower"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageViewCycle"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageViewcompost"
+        android:layout_width="169dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/compost"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -81,28 +91,6 @@
         app:srcCompat="@drawable/greenstar" />
 
     <ImageView
-        android:id="@+id/imageViewSaveWater"
-        android:layout_width="148dp"
-        android:layout_height="183dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="144dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/savewater" />
-
-    <ImageView
-        android:id="@+id/imageViewEnergy"
-        android:layout_width="184dp"
-        android:layout_height="155dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="156dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewSaveWater"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/turnofflights" />
-
-    <ImageView
         android:id="@+id/imageViewDashPre"
         android:layout_width="75dp"
         android:layout_height="44dp"
@@ -144,15 +132,26 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageViewSaveWater"
         android:layout_width="164dp"
         android:layout_height="162dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="344dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/savewatergif"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageViewcompost"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageViewCycle"
+        android:layout_width="177dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/letsgocycling"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"

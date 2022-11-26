@@ -15,6 +15,8 @@ public class Dashboard extends AppCompatActivity {
     ImageView imageViewEnergy;
     ImageView imageViewSaveWater;
     private MediaPlayer mediaPlayer;
+    GifImageView gifImageViewCycle;
+    GifImageView gifImageViewcompost;
     GifImageView gifImageViewLight;
     GifImageView gifImageViewSaveWater;
 
@@ -25,28 +27,30 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        imageViewEnergy = findViewById(R.id.imageViewEnergy);
-        imageViewSaveWater = findViewById(R.id.imageViewSaveWater);
+//        imageViewEnergy = findViewById(R.id.imageViewEnergy);
+//        imageViewSaveWater = findViewById(R.id.imageViewSaveWater);
         gifImageViewLight = findViewById(R.id.gifImageViewLight);
         gifImageViewSaveWater = findViewById(R.id.gifImageViewSaveWater);
+        gifImageViewCycle = findViewById(R.id.gifImageViewCycle);
+        gifImageViewcompost = findViewById(R.id.gifImageViewcompost);
 
         Intent intent = getIntent();
 
 
-        imageViewEnergy.setOnClickListener(view -> {
-            Intent intent1 = new Intent(Dashboard.this,StepOne.class);
-            startActivity(intent1);
-            finish();
-        });
+//        imageViewEnergy.setOnClickListener(view -> {
+//            Intent intent1 = new Intent(Dashboard.this,StepOne.class);
+//            startActivity(intent1);
+//            finish();
+//        });
 
-        imageViewSaveWater.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dashboard.this,StepOne.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        imageViewSaveWater.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Dashboard.this,StepOne.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         gifImageViewLight.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +69,7 @@ public class Dashboard extends AppCompatActivity {
                 finish();
             }
         });
+
 
         // Media player
 
