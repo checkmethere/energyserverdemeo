@@ -14,6 +14,7 @@ import pl.droidsonroids.gif.GifImageView;
 public class Dashboard extends AppCompatActivity {
     ImageView imageViewEnergy;
     ImageView imageViewSaveWater;
+    ImageView imageViewDashPre;
     private MediaPlayer mediaPlayer;
     GifImageView gifImageViewCycle;
     GifImageView gifImageViewcompost;
@@ -29,6 +30,7 @@ public class Dashboard extends AppCompatActivity {
 
 //        imageViewEnergy = findViewById(R.id.imageViewEnergy);
 //        imageViewSaveWater = findViewById(R.id.imageViewSaveWater);
+        imageViewDashPre = findViewById(R.id.imageViewDashPre);
         gifImageViewLight = findViewById(R.id.gifImageViewLight);
         gifImageViewSaveWater = findViewById(R.id.gifImageViewSaveWater);
         gifImageViewCycle = findViewById(R.id.gifImageViewCycle);
@@ -57,6 +59,15 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent1 = new Intent(Dashboard.this,StepOne.class);
                 startActivity(intent1);
+                finish();
+            }
+        });
+
+        imageViewDashPre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });

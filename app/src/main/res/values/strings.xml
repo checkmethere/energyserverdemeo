@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EnergySaverDemo</string>
+    <string name="app_name">Planet Super Heroes</string>
     <string-array name="language_array">
         <item>English</item>
         <item>French</item>
